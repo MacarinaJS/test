@@ -12,7 +12,7 @@ const generatewallet = function(id, productname, tablename, valuecoin) {
   cock = 0;
       url = "https://blockchain.info/tobtc?currency=USD&value=" + amount; 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
+    xhr.open('GET', url, false);
 	
     xhr.onload = function () {
         cock = xhr.responseText;
